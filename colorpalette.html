@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette</title>
+  <style>
+    .palette {
+      display: flex;
+      gap: 10px;
+    }
+    .color-box {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      cursor: pointer;
+    }
+    .color-box span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 5px;
+      border-radius: 3px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .color-box:hover span {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="palette">
+    <div class="color-box" style="background-color: #2A2F2D;">
+      <span>#2A2F2D</span>
+    </div>
+    <div class="color-box" style="background-color: #ADA58C;">
+      <span>#ADA58C</span>
+    </div>
+    <div class="color-box" style="background-color: #424945;">
+      <span>#424945</span>
+    </div>
+    <div class="color-box" style="background-color: #C3C3AC;">
+      <span>#C3C3AC</span>
+    </div>
+    <div class="color-box" style="background-color: #797D74;">
+      <span>#797D74</span>
+    </div>
+  </div>
+
+</body>
+</html>
